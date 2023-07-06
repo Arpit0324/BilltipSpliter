@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #cee9cb;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper {
+    padding: 40px;
+    width: 60%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background: #f3f8fb;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #e1eff4;
+}
+
+input::placeholder {
+    opacity: 0.9;
+}
+
+.tips {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tip {
+    background: #004b32;
+    color: #e7f5f6;
+    min-width: 80px;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tip:hover {
+    background-color: #1ba937;
+    transform: scale(1.2);
+}
+
+button {
+    height: 40px;
+    width: 100%;
+    background-color: #39cc63;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2dbc58;
+    transform: scale(1.1);
+}
+
+.right-wrapper {
+    background: #00474b;
+    color: #badbc5;
+    width: 40%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-wrapper p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+span {
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+span:hover {
+    color: #45ad6d;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    animation: fadeIn 0.6s ease;
+}
